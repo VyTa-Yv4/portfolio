@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yvanne Gubguban — Portfolio</title>
+  <meta name="description" content="Yvanne Gubguban — Computer Science student and system developer from Pampanga, PH. Web systems, computer vision, and cloud.">
+  <meta name="theme-color" content="#1f3fe0">
+  <meta name="color-scheme" content="only light">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%231f3fe0' d='M50 0C55 35 65 45 100 50C65 55 55 65 50 100C45 65 35 55 0 50C35 45 45 35 50 0Z'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Caveat:wght@500;700&family=Space+Mono:wght@400;700&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- shared SVG symbols -->
+  <svg width="0" height="0" class="sr-only" aria-hidden="true">
+    <symbol id="spark" viewBox="0 0 100 100"><path d="M50 0C55 35 65 45 100 50C65 55 55 65 50 100C45 65 35 55 0 50C35 45 45 35 50 0Z"/></symbol>
+    <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></symbol>
+    <symbol id="ext" viewBox="0 0 24 24"><path d="M8 16 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></symbol>
+    <filter id="cloudFx" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.0045 0.009" numOctaves="5" seed="11"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  2.7 0 0 0 -1.2"/>
+    </filter>
+  </svg>
+
+  <!-- ============ SPLASH ============ -->
+  <div class="splash" id="splash" aria-hidden="true">
+    <div class="sky splash__sky">
+      <svg class="sky__clouds" preserveAspectRatio="xMidYMid slice" viewBox="0 0 800 1000">
+        <rect width="800" height="1000" filter="url(#cloudFx)"/>
+      </svg>
+    </div>
+    <p class="splash__meta mono"><span>Portfolio</span><span>Design No.001</span><span>Edition 2026</span></p>
+    <div class="splash__inner">
+      <p class="splash__name">
+        <span class="splash__line"><span class="splash__first">Yvanne</span></span>
+        <span class="splash__line"><span class="splash__last">GUBGUBAN</span></span>
+      </p>
+      <p class="splash__script script">system developer</p>
+    </div>
+    <svg class="splash__spark"><use href="#spark"/></svg>
+    <div class="splash__foot mono">
+      <span>Loading works</span>
+      <div class="splash__bar"><span id="splashBar"></span></div>
+      <span><span id="splashCount">000</span>%</span>
+    </div>
+  </div>
+
+  <div class="grain" aria-hidden="true"></div>
+  <a class="skip" href="#works">Skip to works</a>
+
+  <!-- ============ META BAR / NAV ============ -->
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Back to top">
+      <svg class="brand__spark"><use href="#spark"/></svg>
+      <span>Y.GUBGUBAN</span>
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#works">Works</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#credentials">Credentials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="topbar__meta">
+      <span class="mono hide-sm">15°08′N 120°35′E</span>
+      <span class="mono"><span class="dot"></span> PHT <time id="clock">--:--</time></span>
+    </div>
+  </header>
+
+  <div id="smooth-wrapper">
+  <div id="smooth-content" class="page">
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-label="Introduction">
+      <div class="hero__rail mono">
+        <span>PORTFOLIO</span><span>DESIGN NO.001</span><span>EDITION 2026</span>
+      </div>
+
+      <h1 class="hero__vname" aria-label="Yvanne Gubguban">
+        <span class="hero__vname-first" aria-hidden="true">YVANNE</span>
+      </h1>
+
+      <div class="hero__sky reveal">
+        <div class="sky">
+          <svg class="sky__clouds" preserveAspectRatio="xMidYMid slice" viewBox="0 0 800 1000" aria-hidden="true">
+            <rect width="800" height="1000" filter="url(#cloudFx)"/>
+          </svg>
+          <div class="sky__corner sky__corner--tl mono">Blue sky / No.001</div>
+          <div class="sky__corner sky__corner--br mono">VOL.08 — 2026</div>
+
+          <svg class="spark spark--a"><use href="#spark"/></svg>
+          <svg class="spark spark--b"><use href="#spark"/></svg>
+          <svg class="spark spark--c"><use href="#spark"/></svg>
+
+          <p class="sky__script script" aria-hidden="true">system developer</p>
+        </div>
+        <p class="hero__lastname" aria-hidden="true">GUBGUBAN</p>
+      </div>
+
+      <div class="hero__info">
+        <p class="eyebrow mono">BS Computer Science · Holy Angel University</p>
+        <p class="hero__lede">
+          I build systems people actually use: request workflows that replace paper forms,
+          learning portals, and computer-vision tools that help proctors.
+        </p>
+        <dl class="specs mono">
+          <div><dt>Role</dt><dd>System Developer</dd></div>
+          <div><dt>Based</dt><dd>Pampanga, PH</dd></div>
+          <div><dt>Grad.</dt><dd>Nov 2026</dd></div>
+          <div><dt>Status</dt><dd><span class="pill pill--live">Open to work</span></dd></div>
+        </dl>
+        <div class="hero__ctas">
+          <a class="btn btn--solid" href="#works">See my works <svg><use href="#arrow"/></svg></a>
+          <a class="btn btn--ghost" href="#contact">Get in touch</a>
+        </div>
+        <div class="barcode" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- marquee band -->
+    <div class="band" aria-hidden="true">
+      <div class="band__track">
+        <span>OPEN TO WORK</span><svg><use href="#spark"/></svg>
+        <span>SYSTEM DEVELOPER</span><svg><use href="#spark"/></svg>
+        <span class="band__item"><img class="band__logo" src="assets/img/skills/vscode.svg" alt="" width="26" height="26">VS CODE</span><svg><use href="#spark"/></svg>
+        <span class="band__item"><img class="band__logo" src="assets/img/skills/photoshop.svg" alt="" width="26" height="26">PHOTOSHOP</span><svg><use href="#spark"/></svg>
+        <span class="band__item"><img class="band__logo" src="assets/img/skills/illustrator.svg" alt="" width="26" height="26">ILLUSTRATOR</span><svg><use href="#spark"/></svg>
+        <span class="band__item"><img class="band__logo" src="assets/img/skills/premiere-pro.svg" alt="" width="26" height="26">PREMIERE PRO</span><svg><use href="#spark"/></svg>
+        <span class="band__item"><img class="band__logo" src="assets/img/skills/after-effects.svg" alt="" width="26" height="26">AFTER EFFECTS</span><svg><use href="#spark"/></svg>
+        <span>WEB · CLOUD · COMPUTER VISION</span><svg><use href="#spark"/></svg>
+        <span>OPEN TO WORK</span><svg><use href="#spark"/></svg>
+        <span>SYSTEM DEVELOPER</span><svg><use href="#spark"/></svg>
+        <span class="band__item"><img class="band__logo" src="assets/img/skills/vscode.svg" alt="" width="26" height="26">VS CODE</span><svg><use href="#spark"/></svg>
+        <span class="band__item"><img class="band__logo" src="assets/img/skills/photoshop.svg" alt="" width="26" height="26">PHOTOSHOP</span><svg><use href="#spark"/></svg>
+        <span class="band__item"><img class="band__logo" src="assets/img/skills/illustrator.svg" alt="" width="26" height="26">ILLUSTRATOR</span><svg><use href="#spark"/></svg>
+        <span class="band__item"><img class="band__logo" src="assets/img/skills/premiere-pro.svg" alt="" width="26" height="26">PREMIERE PRO</span><svg><use href="#spark"/></svg>
+        <span class="band__item"><img class="band__logo" src="assets/img/skills/after-effects.svg" alt="" width="26" height="26">AFTER EFFECTS</span><svg><use href="#spark"/></svg>
+        <span>WEB · CLOUD · COMPUTER VISION</span><svg><use href="#spark"/></svg>
+      </div>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about">
+      <header class="sec-head reveal">
+        <span class="sec-head__no mono">No.01</span>
+        <h2 class="sec-head__title">About</h2>
+        <span class="sec-head__note script">hello, nice to meet you</span>
+      </header>
+
+      <div class="about__grid">
+        <div class="about__copy reveal">
+          <p class="about__big">
+            I'm <em>Yvanne</em>, a Computer Science student from Pampanga
+            who likes turning messy, manual processes into clean systems.
+          </p>
+          <p>
+            During my internship at <strong>La Rose Noire Philippines</strong> I built the
+            facilities team's item and uniform request system, which replaced paper forms with a
+            full approve → issue → return workflow. For my thesis I co-built a computer-vision
+            monitor that flags suspicious behavior during online exams.
+          </p>
+          <p>
+            I work across the stack: PHP and MySQL on the backend, React and Flutter on the front,
+            and Firebase or AWS when it needs to live in the cloud. I care about the details,
+            manage my own time, and keep learning.
+          </p>
+
+          <div class="about__interests">
+            <p class="eyebrow mono">Off the clock</p>
+            <ul class="stamps">
+              <li>Films</li><li>Animation</li><li>Music</li><li>Running</li><li>Story-driven games</li>
+            </ul>
+          </div>
+        </div>
+
+        <aside class="about__side reveal">
+
+          <div class="ticket">
+            <div class="ticket__main">
+              <p class="mono ticket__label">ADMIT ONE · SOFT SKILLS</p>
+              <ul class="ticket__list">
+                <li>Time management</li>
+                <li>Adaptability</li>
+                <li>Active listening</li>
+                <li>Attention to detail</li>
+                <li>Project management</li>
+                <li>Continuous learning</li>
+              </ul>
+            </div>
+            <div class="ticket__stub">
+              <span class="mono">NO.</span>
+              <span class="ticket__num">06</span>
+              <div class="barcode barcode--v" aria-hidden="true"></div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ WORKS ============ -->
+    <section class="section works" id="works">
+      <header class="sec-head reveal">
+        <span class="sec-head__no mono">No.02</span>
+        <h2 class="sec-head__title">Selected Works</h2>
+        <span class="sec-head__note script">things I've shipped</span>
+      </header>
+
+      <div class="works__list">
+
+        <!-- FAC-ITMS -->
+        <article class="work reveal">
+          <figure class="work__cover">
+            <img src="assets/img/works/fac-itms-1600.webp" srcset="assets/img/works/fac-itms-800.webp 800w, assets/img/works/fac-itms-1600.webp 1600w" sizes="(max-width: 760px) 92vw, 600px" width="1600" height="1000" loading="lazy" alt="FAC-ITMS login screen with the Facilities Item Request branding">
+            <figcaption class="work__fig mono">Login</figcaption>
+          </figure>
+          <div class="work__body">
+            <p class="work__meta mono"><span>01</span><span>Internship · 2026</span><span>La Rose Noire PH</span></p>
+            <h3 class="work__title">FAC-ITMS</h3>
+            <p class="work__sub">Facilities item &amp; uniform request system</p>
+            <p>
+              Replaced paper request handling for La Rose Noire's facilities team. Employees request
+              chemicals, materials, uniforms and PPE through a digital copy of the official uniform
+              request form. Every request moves through one tracked lifecycle.
+            </p>
+            <ul class="work__points">
+              <li>Request → approve/reject → issue → return → receipt, with an audit log of every edit</li>
+              <li>Role-based access for employees, managers, the uniform custodian and admins</li>
+              <li>Storage and stock monitoring, weekly usage reports, data export and in-app chat</li>
+            </ul>
+            <ul class="tags mono"><li>PHP</li><li>MySQL</li><li>JavaScript</li><li>Tailwind CSS</li></ul>
+            <p class="work__links mono"><span class="pill">Internal company system · private</span></p>
+          </div>
+        </article>
+
+        <!-- OAMS -->
+        <article class="work work--flip reveal">
+          <figure class="work__cover">
+            <img src="assets/img/works/oams-1600.webp" srcset="assets/img/works/oams-800.webp 800w, assets/img/works/oams-1600.webp 1600w" sizes="(max-width: 760px) 92vw, 600px" width="1600" height="1000" loading="lazy" alt="OAMS admin dashboard showing total, high-risk and moderate-risk session counts">
+            <figcaption class="work__fig mono">Dashboard</figcaption>
+          </figure>
+          <div class="work__body">
+            <p class="work__meta mono"><span>02</span><span>Thesis · 2025–26</span><span>Team of 4</span></p>
+            <h3 class="work__title">OAMS</h3>
+            <p class="work__sub">Online Assessment Monitoring System</p>
+            <p>
+              A decision-support tool for online exams. It combines phone detection with head-pose and
+              gaze tracking and flags suspicious behavior for a human proctor to review.
+            </p>
+            <ul class="work__points">
+              <li>Faster R-CNN detects smartphones; MediaPipe Face Mesh with solvePnP estimates yaw, pitch and roll</li>
+              <li>Per-examinee calibration and sliding-window analysis tell brief glances apart from repeated behavior</li>
+              <li>Low / Moderate / High risk levels, evidence frames, and a Firebase-backed dashboard for the professor</li>
+            </ul>
+            <ul class="tags mono"><li>Python</li><li>PyTorch</li><li>MediaPipe</li><li>OpenCV</li><li>Firebase</li><li>React</li><li>Docker</li></ul>
+            <p class="work__links mono">
+              <a href="https://github.com/raileyTiglao/Online-Assessment-Monitoring-System" target="_blank" rel="noopener">GitHub <svg><use href="#ext"/></svg></a>
+            </p>
+          </div>
+        </article>
+
+        <!-- SkillTree -->
+        <article class="work reveal">
+          <figure class="work__cover">
+            <img src="assets/img/works/skilltree-1600.webp" srcset="assets/img/works/skilltree-800.webp 800w, assets/img/works/skilltree-1600.webp 1600w" sizes="(max-width: 760px) 92vw, 600px" width="1600" height="1000" loading="lazy" alt="SkillTree landing page inviting computer science students into the back-end track">
+            <figcaption class="work__fig mono">Landing</figcaption>
+          </figure>
+          <div class="work__body">
+            <p class="work__meta mono"><span>03</span><span>Personal project</span><span>Lead developer</span></p>
+            <h3 class="work__title">SkillTree</h3>
+            <p class="work__sub">Adaptive multi-track learning portal</p>
+            <p>
+              An educational portal with separate learning tracks for Frontend, Backend, UI/UX and
+              DevOps. Learners follow a path suited to them and can see how far along they are.
+            </p>
+            <ul class="work__points">
+              <li>Designed and launched the portal, with dedicated modules for each track</li>
+              <li>Firebase Authentication with email verification and protected routes</li>
+              <li>Tracks each learner's milestones in Firestore to build a personal learning path</li>
+            </ul>
+            <ul class="tags mono"><li>React</li><li>Firebase</li><li>Firestore</li><li>Tailwind CSS</li><li>React Router</li></ul>
+            <p class="work__links mono">
+              <a href="https://github.com/VyTa-Yv4/SkillTree" target="_blank" rel="noopener">GitHub <svg><use href="#ext"/></svg></a>
+            </p>
+          </div>
+        </article>
+
+        <!-- Cinemust -->
+        <article class="work work--flip reveal">
+          <figure class="work__cover">
+            <img src="assets/img/works/cinemust-1600.webp" srcset="assets/img/works/cinemust-800.webp 800w, assets/img/works/cinemust-1600.webp 1600w" sizes="(max-width: 760px) 92vw, 600px" width="1600" height="1000" loading="lazy" alt="Cinemust app logo: a teal-to-green film camera mark">
+            <figcaption class="work__fig mono">Logo</figcaption>
+          </figure>
+          <div class="work__body">
+            <p class="work__meta mono"><span>04</span><span>Mobile app</span><span>Flutter</span></p>
+            <h3 class="work__title">Cinemust</h3>
+            <p class="work__sub">University video archive</p>
+            <p>
+              A mobile video archive built to promote the University. Users can browse its films
+              and keep their own notes alongside them.
+            </p>
+            <ul class="work__points">
+              <li>Built in Dart with Flutter for a smooth, simple browsing experience</li>
+              <li>Firebase cloud storage and authentication</li>
+              <li>Notes sync securely across all of a user's devices</li>
+            </ul>
+            <ul class="tags mono"><li>Flutter</li><li>Dart</li><li>Firebase</li></ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ TIMELINE + SKILLS ============ -->
+    <section class="section timeline" id="timeline">
+      <header class="sec-head reveal">
+        <span class="sec-head__no mono">No.03</span>
+        <h2 class="sec-head__title">Timeline</h2>
+        <span class="sec-head__note script">where I've been</span>
+      </header>
+
+      <div class="timeline__grid">
+        <ol class="tl reveal">
+          <li class="tl__item">
+            <p class="tl__date mono">Jul — Oct 2026</p>
+            <h3 class="tl__role">Intern System Developer</h3>
+            <p class="tl__org">La Rose Noire Philippines · Angeles, Central Luzon · On-site</p>
+            <p>Built and maintained FAC-ITMS, the facilities team's item and uniform request system,
+              from database to user interface. I also wrote its user guide, SRS and developer documentation.</p>
+            <ul class="tags mono"><li>HTML</li><li>CSS</li><li>PHP</li><li>MySQL</li><li>JavaScript</li></ul>
+          </li>
+          <li class="tl__item">
+            <p class="tl__date mono">2022 — Nov 2026 (expected)</p>
+            <h3 class="tl__role">B.S. Computer Science</h3>
+            <p class="tl__org">Holy Angel University · Angeles City</p>
+            <p>GWA <strong>1.64</strong> (excluding OJT). Coursework included building and deploying projects
+              that combine simulation, machine learning and IoT.</p>
+          </li>
+        </ol>
+
+        <div class="skills reveal">
+          <p class="eyebrow mono">Toolkit</p>
+          <div class="skills__group">
+            <h3>Frontend</h3>
+            <ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li><li>Tailwind CSS</li><li>Flutter / Dart</li></ul>
+          </div>
+          <div class="skills__group">
+            <h3>Backend &amp; Data</h3>
+            <ul class="chips"><li>PHP</li><li>Python</li><li>MySQL / SQL</li><li>Firebase</li><li>REST APIs</li></ul>
+          </div>
+          <div class="skills__group">
+            <h3>Cloud &amp; DevOps</h3>
+            <ul class="chips"><li>AWS</li><li>Docker</li><li>Git &amp; GitHub</li><li>Networking (CCNA)</li></ul>
+          </div>
+          <div class="skills__group">
+            <h3>AI &amp; Vision</h3>
+            <ul class="chips"><li>OpenCV</li><li>MediaPipe</li><li>PyTorch</li><li>Faster R-CNN</li></ul>
+          </div>
+          <div class="skills__group">
+            <h3>Design</h3>
+            <ul class="chips"><li>UI / UX</li><li>Digital design</li></ul>
+          </div>
+          <div class="skills__group">
+            <h3>Tools</h3>
+            <ul class="chips chips--icons">
+              <li><img src="assets/img/skills/vscode.svg" alt="" width="18" height="18">VS Code</li>
+              <li><img src="assets/img/skills/photoshop.svg" alt="" width="18" height="18">Photoshop</li>
+              <li><img src="assets/img/skills/illustrator.svg" alt="" width="18" height="18">Illustrator</li>
+              <li><img src="assets/img/skills/premiere-pro.svg" alt="" width="18" height="18">Premiere Pro</li>
+              <li><img src="assets/img/skills/after-effects.svg" alt="" width="18" height="18">After Effects</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CREDENTIALS ============ -->
+    <section class="section creds" id="credentials">
+      <header class="sec-head reveal">
+        <span class="sec-head__no mono">No.04</span>
+        <h2 class="sec-head__title">Credentials</h2>
+        <span class="sec-head__note script">10 and counting</span>
+      </header>
+
+      <div class="ledger reveal" role="table" aria-label="Licenses and certifications">
+        <div class="ledger__row ledger__row--head mono" role="row">
+          <span role="columnheader">No.</span><span role="columnheader">Certification</span><span role="columnheader">Issuer</span><span role="columnheader">Issued</span>
+        </div>
+        <div class="ledger__row" role="row"><span class="mono" role="cell">01</span><span role="cell">Relational Database</span><span role="cell" class="issuer">freeCodeCamp</span><span role="cell" class="mono">Oct 2026</span></div>
+        <div class="ledger__row" role="row"><span class="mono" role="cell">02</span><span role="cell">Responsive Web Design</span><span role="cell" class="issuer">freeCodeCamp</span><span role="cell" class="mono">Oct 2026</span></div>
+        <div class="ledger__row" role="row"><span class="mono" role="cell">03</span><span role="cell">CCNA: Switching, Routing, and Wireless Essentials</span><span role="cell" class="issuer">Cisco</span><span role="cell" class="mono">Oct 2025</span></div>
+        <div class="ledger__row" role="row"><span class="mono" role="cell">04</span><span role="cell">Introduction to Modern AI</span><span role="cell" class="issuer">Cisco</span><span role="cell" class="mono">Jun 2025</span></div>
+        <div class="ledger__row" role="row"><span class="mono" role="cell">05</span><span role="cell">AWS Academy Graduate — Cloud Foundations</span><span role="cell" class="issuer">Amazon Web Services</span><span role="cell" class="mono">Mar 2025</span></div>
+        <div class="ledger__row" role="row"><span class="mono" role="cell">06</span><span role="cell">Relational Database V8</span><span role="cell" class="issuer">freeCodeCamp</span><span role="cell" class="mono">Feb 2025</span></div>
+        <div class="ledger__row" role="row"><span class="mono" role="cell">07</span><span role="cell">Cyber Threat Management</span><span role="cell" class="issuer">Cisco</span><span role="cell" class="mono">Oct 2024</span></div>
+        <div class="ledger__row" role="row"><span class="mono" role="cell">08</span><span role="cell">English for IT 1</span><span role="cell" class="issuer">Cisco</span><span role="cell" class="mono">Oct 2024</span></div>
+        <div class="ledger__row" role="row"><span class="mono" role="cell">09</span><span role="cell">CCNA: Introduction to Networks</span><span role="cell" class="issuer">Cisco</span><span role="cell" class="mono">May 2024</span></div>
+        <div class="ledger__row" role="row"><span class="mono" role="cell">10</span><span role="cell">IT Fundamentals+ (ITF+)</span><span role="cell" class="issuer">CompTIA</span><span role="cell" class="mono">May 2023</span></div>
+      </div>
+      <p class="creds__verify mono reveal">
+        <a href="https://www.linkedin.com/in/yv47/details/certifications/" target="_blank" rel="noopener">Verify credentials on LinkedIn <svg><use href="#ext"/></svg></a>
+      </p>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact">
+      <div class="sky sky--contact">
+        <svg class="sky__clouds" preserveAspectRatio="xMidYMid slice" viewBox="0 0 800 1000" aria-hidden="true">
+          <rect width="800" height="1000" filter="url(#cloudFx)"/>
+        </svg>
+      </div>
+      <div class="contact__inner reveal">
+        <p class="mono contact__no">No.05 — Contact</p>
+        <h2 class="contact__title">Let's build<br><em>something</em> together.</h2>
+        <p class="contact__script script">send a message ✦</p>
+
+        <div class="contact__mail">
+          <a class="contact__email" href="mailto:gubgubany@gmail.com">gubgubany@gmail.com</a>
+          <button class="btn btn--paper" id="copyBtn" type="button" data-email="gubgubany@gmail.com">Copy email</button>
+        </div>
+
+        <ul class="contact__links mono">
+          <li><a href="https://github.com/VyTa-Yv4" target="_blank" rel="noopener">GitHub / VyTa-Yv4 <svg><use href="#ext"/></svg></a></li>
+          <li><a href="https://www.linkedin.com/in/yv47" target="_blank" rel="noopener">LinkedIn / yv47 <svg><use href="#ext"/></svg></a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer mono">
+    <span>© <span id="year">2026</span> Yvanne Gubguban</span>
+    <div class="barcode barcode--sm" aria-hidden="true"></div>
+    <span>Pampanga, PH · Design No.001</span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+  </div>
+  </div>
+
+  <div class="toast mono" id="toast" role="status" aria-live="polite"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollSmoother.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/motion.js"></script>
+</body>
+</html>
